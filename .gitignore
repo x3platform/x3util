@@ -1,0 +1,15 @@
+# Folders
+.vscode
+obj
+bin
+dist
+doc
+releases
+
+# Temp Files
+*.suo
+*.user
+
+# Files
+.env
+go.sum

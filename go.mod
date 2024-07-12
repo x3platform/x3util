@@ -16,6 +16,7 @@ require (
 	github.com/spf13/viper v1.8.1
 	github.com/stretchr/testify v1.8.3
 	golang.org/x/oauth2 v0.16.0
+  github.com/mitchellh/mapstructure v1.4.1
 )
 
 require (

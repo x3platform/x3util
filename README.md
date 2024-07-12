@@ -1,17 +1,17 @@
 # X3Util
-工具
+Util Package
 
-## 安装依赖
+## Prepare
 ```
 go mod tidy
 ```
 
-## 编译
+## Build
 ```
 go build
 ```
 
-## 测试
+## Test
 ```
-
+go test x3platform.com/x3util/pkg/...
 ```
