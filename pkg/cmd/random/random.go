@@ -5,7 +5,7 @@ import (
 
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
-	"x3platform.com/x3util/pkg/util/stringutil"
+	"x3platform.com/x3util/pkg/util/randomutil"
 )
 
 func NewCmdRandom() *cobra.Command {
@@ -19,7 +19,7 @@ func NewCmdRandom() *cobra.Command {
 			Short: "Print random string",
 			Long:  `subcommand of x3util, return random string`,
 			Run: func(cmd *cobra.Command, args []string) {
-				fmt.Println(stringutil.Random(length))
+				fmt.Println(randomutil.Characters(length))
 			},
 		}
 	)

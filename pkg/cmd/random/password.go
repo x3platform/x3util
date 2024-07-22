@@ -4,8 +4,7 @@ import (
 	"fmt"
 
 	"github.com/spf13/cobra"
-	"github.com/spf13/viper"
-	"x3platform.com/x3util/pkg/util/stringutil"
+	"x3platform.com/x3util/pkg/util/randomutil"
 )
 
 func NewCmdPassword() *cobra.Command {
@@ -22,10 +21,12 @@ func NewCmdPassword() *cobra.Command {
 		Short: "password",
 		Long:  `subcommand of random, return password string`,
 		Run: func(cmd *cobra.Command, args []string) {
-			length = viper.GetInt("random.length")
-			fmt.Println(stringutil.RandomByChars(chars, length))
+			// length = viper.GetInt("random.length")
+			fmt.Println(randomutil.Chars(chars, length))
 		},
 	}
+
+	command.Flags().IntVarP(&length, "length", "", 20, "length of password")
 
 	return command
 }
