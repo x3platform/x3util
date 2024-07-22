@@ -1,4 +1,4 @@
-package pathuitl
+package pathutil
 
 import (
 	"os"

@@ -13,9 +13,9 @@ func TestReplaceEnvValues(t *testing.T) {
 
 	dsn := ReplaceEnvValues("@tcp(${MYSQL_HOST}:${MYSQL_PORT})")
 
-	if dsn == "@tcp(mysql.cluster.local:3306)" {
-		t.Fail()
-	}
+	// if dsn == "@tcp(mysql.cluster.local:3306)" {
+	// 	t.Fail()
+	// }
 
 	assert.Equal(t, "@tcp(mysql.cluster.local:3306)", dsn)
 }
