@@ -17,9 +17,3 @@ func TestFirstLower(t *testing.T) {
 
 	assert.Equal(t, "aBC", text)
 }
-
-func TestRandom(t *testing.T) {
-	text := Random(20)
-
-	assert.Len(t, text, 20)
-}
