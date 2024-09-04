@@ -26,7 +26,7 @@ func initEnvValues() {
 	}
 }
 
-// 获取环境变量
+// Get environment values
 func GetEnvValues() map[string]string {
 	if envMap == nil {
 		initEnvValues()

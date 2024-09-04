@@ -14,8 +14,9 @@ func Time(value int64) time.Time {
 // 将 "yyyy-MM-dd HH:mm:ss" 转换为 Golang 时间格式 "2006-01-02 15:04:05"
 func ConvetTimeLayout(layout string) string {
 	// "yyyy-MM-dd HH:mm:ss" => "2006-01-02 15:04:05"
-	replacer := strings.NewReplacer("yyyy", "2006", "yy", "06", "MM", "01", "dd", "02",
-		"HH", "15", "mm", "04", "ss", "05", "SSS", "000", "SS", "00")
+	// "dd/MMM/yyyy:HH:mm:ss Z" => "02/Jan/2006:15:04:05 -0700"
+	replacer := strings.NewReplacer("yyyy", "2006", "yy", "06", "MMM", "Jan", "MM", "01", "dd", "02",
+		"HH", "15", "mm", "04", "ss", "05", "SSS", "000", "SS", "00", "Z", "-0700")
 
 	layout = replacer.Replace(layout)
 
