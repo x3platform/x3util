@@ -35,6 +35,7 @@ func GetEnvValues() map[string]string {
 	return envMap
 }
 
+// Replace ${Variable} to environment values
 func ReplaceEnvValues(text string) string {
 	reg := regexp.MustCompile(`\${[\w.]*\}`)
 	keys := reg.FindAllString(text, -1)
