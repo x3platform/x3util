@@ -55,7 +55,7 @@ func TestFormatTime(t *testing.T) {
 	timeValue = ParseTime(TEST_TIME_TEXT, TEST_TIME_LOCAL_LAYOUT)
 
 	timeText = FormatTime(timeValue, "yyyy-MM-ddTHH:mm:ssZ")
-	assert.Equal(t, "2020-12-12T12:12:20Z", timeText)
+	assert.Equal(t, "2020-12-12T12:12:20+0800", timeText)
 
 	timeText = FormatTime(timeValue, "yyyy-MM-dd HH:mm:ss")
 	assert.Equal(t, "2020-12-12 12:12:20", timeText)
@@ -76,7 +76,7 @@ func TestDuration(t *testing.T) {
 	timeValue = ParseTime(TEST_TIME_TEXT, TEST_TIME_LOCAL_LAYOUT)
 
 	timeText = FormatTime(timeValue, "yyyy-MM-ddTHH:mm:ssZ")
-	assert.Equal(t, "2020-12-12T12:12:20Z", timeText)
+	assert.Equal(t, "2020-12-12T12:12:20+0800", timeText)
 
 	timeText = FormatTime(timeValue, "yyyy-MM-dd HH:mm:ss")
 	assert.Equal(t, "2020-12-12 12:12:20", timeText)

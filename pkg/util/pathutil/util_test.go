@@ -1,6 +1,7 @@
 package pathutil
 
 import (
+	"runtime"
 	"testing"
 
 	"github.com/stretchr/testify/assert"
@@ -15,5 +16,9 @@ func TestExists(t *testing.T) {
 func TestGetFileDir(t *testing.T) {
 	result := GetFileDir("/opt/x3util/abc.txt")
 
-	assert.Equal(t, "/opt/x3util", result, "dir should equal to /opt/x3platform")
+	if runtime.GOOS == "windows" {
+		assert.Equal(t, "\\opt\\x3util", result, "dir should equal to /opt/x3util")
+	} else {
+		assert.Equal(t, "/opt/x3util", result, "dir should equal to /opt/x3util")
+	}
 }
