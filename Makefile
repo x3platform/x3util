@@ -1,6 +1,6 @@
 PROAGRAM_NAME=x3util
 IMAGE_NAME=x3platform/x3util
-VERSION=0.0.2
+VERSION=0.0.5
 #TAG=${NAME}::${VERSION}
 
 .PHONY: build

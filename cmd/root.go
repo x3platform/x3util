@@ -3,8 +3,8 @@ package cmd
 import (
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
-	"x3platform.com/x3util/pkg/cmd/datetime"
-	"x3platform.com/x3util/pkg/cmd/random"
+	"x3platform.com/x3util/cmd/datetime"
+	"x3platform.com/x3util/cmd/random"
 )
 
 var (

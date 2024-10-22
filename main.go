@@ -5,11 +5,11 @@ import (
 
 	log "github.com/sirupsen/logrus"
 
-	"x3platform.com/x3util/pkg/cmd"
+	"x3platform.com/x3util/cmd"
 )
 
 // @title util
-// @version 0.0.1
+// @version 0.0.5
 // @description x3util
 // @license.name MIT
 // @license.url https://github.com/x3platform/x3util/blob/main/LICENSE.md
